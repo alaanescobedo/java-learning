@@ -1,20 +1,21 @@
 import java.util.Scanner;
 
 public class SortTwoNumbers {
-    private static Scanner scanner = new Scanner(System.in);
+    private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
         userInput();
     }
 
     public static void userInput() {
-        int numberA = 0, numberB = 0;
+        int numberA, numberB;
         String result;
 
         System.out.println("Enter number A: ");
         numberA = scanner.nextInt();
         System.out.println("Enter number B: ");
         numberB = scanner.nextInt();
+        scanner.close();
 
         result = numberA > numberB ? numberA + " " + numberB : numberB + " " + numberA;
 
